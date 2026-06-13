@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><style>
+:root{--paper:#f4ecda;--card:#fbf6ea;--ink:#3b3127;--ink2:#6f6353;--coral:#e07a4e;--coral-soft:#f0c7b1;--line:#d8cbb2;--ok:#5a8f4e;--warn:#c2502f;}
+*{box-sizing:border-box;margin:0;padding:0;}html,body{width:1600px;height:760px;overflow:hidden;}
+body{font-family:"PingFang SC","Hiragino Sans GB",-apple-system,"Segoe UI",sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;
+ background:radial-gradient(circle at 8% 10%,rgba(224,122,78,.07),transparent 40%),radial-gradient(circle at 94% 92%,rgba(224,122,78,.06),transparent 45%),var(--paper);
+ display:flex;align-items:center;gap:0;padding:56px 60px;}
+.col{flex:1;}
+.lbl{font-size:24px;letter-spacing:.18em;font-weight:800;color:var(--coral);margin-bottom:20px;}
+.panel{background:var(--card);border:2px solid var(--line);border-radius:24px;padding:34px 36px;box-shadow:0 10px 30px rgba(90,70,40,.07);}
+.panel h3{font-size:30px;margin-bottom:18px;font-family:"SF Mono",ui-monospace,Menlo,monospace;font-weight:700;}
+.line{font-size:25px;color:var(--ink2);line-height:1.7;font-family:"SF Mono",ui-monospace,Menlo,monospace;}
+.line .k{color:var(--warn);}
+.badwarn{margin-top:18px;font-size:25px;color:var(--warn);font-weight:700;}
+.mid{width:300px;flex:none;display:flex;flex-direction:column;align-items:center;padding:0 10px;}
+.bigarrow{font-size:54px;color:var(--coral);font-weight:800;}
+.pipe{font-size:24px;font-weight:800;color:var(--ink);text-align:center;line-height:1.5;margin:6px 0 14px;}
+.pipe .c{color:var(--coral);}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
+.chip{font-size:17px;background:var(--paper);border:2px solid var(--coral-soft);border-radius:999px;padding:5px 13px;color:var(--ink2);font-weight:700;}
+.okrow{display:flex;align-items:center;gap:14px;font-size:27px;font-weight:700;margin:11px 0;}
+.okrow .c{width:34px;height:34px;flex:none;border-radius:50%;background:var(--ok);color:#fff;font-size:21px;display:flex;align-items:center;justify-content:center;}
+.repocard{margin-top:18px;font-size:23px;color:var(--ink2);font-family:"SF Mono",ui-monospace,Menlo,monospace;line-height:1.6;}
+.repocard .s{color:var(--coral);font-weight:800;}
+</style></head><body>
+  <div class="col">
+    <div class="lbl">INPUT · A PRIVATE SKILL</div>
+    <div class="panel">
+      <h3>~/my-skill/</h3>
+      <div class="line">SKILL.md<br>auth → <span class="k">~/.config/my-keys.json</span><br>paths → <span class="k">/Users/me/…</span><br>deps → <span class="k">my private lib</span></div>
+      <div class="badwarn">“works great — on my machine”<br>0★ · nobody knows it exists</div>
+    </div>
+  </div>
+
+  <div class="mid">
+    <div class="bigarrow">→</div>
+    <div class="pipe">world-<span class="c">intro</span></div>
+    <div class="chips">
+      <span class="chip">P0 worth-it?</span><span class="chip">P2 generalize</span>
+      <span class="chip">P3 prove</span><span class="chip">P4 polish</span>
+      <span class="chip">P5 ship</span><span class="chip">P6 promote</span>
+    </div>
+    <div class="bigarrow" style="margin-top:14px;">→</div>
+  </div>
+
+  <div class="col">
+    <div class="lbl">OUTPUT · AN OPEN-SOURCE PROJECT</div>
+    <div class="panel">
+      <div class="okrow"><span class="c">✓</span>found <span style="font-size:19px;color:var(--ink2);font-weight:600">— real search + promotion</span></div>
+      <div class="okrow"><span class="c">✓</span>understood <span style="font-size:19px;color:var(--ink2);font-weight:600">— persuasion-first README</span></div>
+      <div class="okrow"><span class="c">✓</span>verified <span style="font-size:19px;color:var(--ink2);font-weight:600">— real-data cases</span></div>
+      <div class="okrow"><span class="c">✓</span>used <span style="font-size:19px;color:var(--ink2);font-weight:600">— zero-config, one-line install</span></div>
+      <div class="okrow"><span class="c">✓</span>improved upon <span style="font-size:19px;color:var(--ink2);font-weight:600">— PR-ready growth points</span></div>
+      <div class="repocard">README · cases/ · <span class="s">v0.1.0</span> release</div>
+    </div>
+  </div>
+</body></html>
