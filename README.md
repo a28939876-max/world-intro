@@ -61,7 +61,7 @@ cp -r world-intro ~/.claude/skills/world-intro
 
 ## We use it on ourselves
 
-world-intro didn't appear from nowhere. It's the distilled pipeline behind two real releases — [skill-lineage](https://github.com/a28939876-max/skill-lineage) and [world-aid](https://github.com/a28939876-max/world-aid) — and **every rule here was paid for in those launches.** It was then pointed at itself: the verdict you're reading, the case studies below, this very README, were produced by running world-intro on world-intro.
+world-intro didn't appear from nowhere. It's the distilled pipeline behind three real releases — [skill-lineage](https://github.com/a28939876-max/skill-lineage), [world-aid](https://github.com/a28939876-max/world-aid) and [skill-hunter-company](https://github.com/a28939876-max/skill-hunter-company) — and **every rule here was paid for in those launches.** It was then pointed at itself: the verdict you're reading, the case studies below, this very README, were produced by running world-intro on world-intro.
 
 ## The pipeline
 
@@ -87,6 +87,7 @@ Typical picks from the launches world-intro has powered — full write-ups in [c
 |---|---|---|
 | [01 · skill-lineage](cases/01-skill-lineage.md) | trace a skill's forks/mirrors/injections before you install | found a **5,233★** localized fork that star-sorting hides; one diff caught a *"silently POST a score back"* injection |
 | [02 · world-aid](cases/02-world-aid.md) | say a need, it rounds up the existing tools | "YouTube → text": **13 candidates → 9 distinct**; the flashiest 7★ "Tor" pick was caught doing `sudo systemctl start tor` |
+| [03 · skill-hunter-company](cases/03-skill-hunter-company.md) | the whole find→vet→fuse→install→govern lifecycle, as a "headhunting firm" for skills | a 4-round model-vs-model debate overturned a "don't open-source the orchestration" verdict; the umbrella shipped orchestrating the two repos above |
 
 ## How is this different from `open-source-hardening` skills?
 
@@ -100,8 +101,8 @@ The value is the rules that were paid for in real launches: the matrix-stripping
 **"Won't the official/leading project just absorb my niche?"**
 If P0 says the lane is owned, that's the correct outcome — world-intro tells you to contribute upstream instead of shipping a redundant repo. When it says ship, it makes you name the difference in the README so absorption is a fair fight, not a surprise.
 
-**"Are these really only two cases?"**
-No — these two are typical picks from the launches the pipeline has run; the rules generalize to any private skill or internal tool, not just these.
+**"Are these really only three cases?"**
+No — these three are typical picks from the launches the pipeline has run; the rules generalize to any private skill or internal tool, not just these.
 
 ## License
 

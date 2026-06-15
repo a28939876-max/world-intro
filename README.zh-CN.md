@@ -61,7 +61,7 @@ cp -r world-intro ~/.claude/skills/world-intro
 
 ## 我们拿它开过自己的刀
 
-world-intro 不是凭空来的。它是两个真实发布背后的提炼管线——[skill-lineage](https://github.com/a28939876-max/skill-lineage) 和 [world-aid](https://github.com/a28939876-max/world-aid)——**这里的每条规律都在那两次发布里付过学费。** 然后它被指向了自己：你正在读的这份判决、下面的案例、这份 README 本身，都是用 world-intro 跑 world-intro 跑出来的。
+world-intro 不是凭空来的。它是三个真实发布背后的提炼管线——[skill-lineage](https://github.com/a28939876-max/skill-lineage)、[world-aid](https://github.com/a28939876-max/world-aid) 和 [skill-hunter-company](https://github.com/a28939876-max/skill-hunter-company)——**这里的每条规律都在那几次发布里付过学费。** 然后它被指向了自己：你正在读的这份判决、下面的案例、这份 README 本身，都是用 world-intro 跑 world-intro 跑出来的。
 
 ## 这条管线
 
@@ -87,6 +87,7 @@ skill 本体是 [SKILL.md](SKILL.md)；深度内容在 [pipeline/](pipeline/)—
 |---|---|---|
 | [01 · skill-lineage](cases/01-skill-lineage.md) | 装之前先查一个 skill 的 fork/镜像/注入 | 翻出一个按星排序会藏起来的 **5,233★** 汉化版；一次 diff 抓到一条"偷偷打分回传"的注入 |
 | [02 · world-aid](cases/02-world-aid.md) | 说一句需求，它把现成工具找齐 | "油管→文字"：**13 候选 → 9 个真正不同**；最唬人的 7★ "Tor" 版被抓到在 `sudo systemctl start tor` |
+| [03 · skill-hunter-company](cases/03-skill-hunter-company.md) | 把 找→验→融→装→治 整条生命周期打包成 skill 的"猎头公司" | 一场四轮双模型对线推翻了"别开源编排层"的旧判定；伞仓上线，编排上面两个仓 |
 
 ## 和「代码硬化」类 skill 有什么区别？
 
@@ -100,8 +101,8 @@ skill 本体是 [SKILL.md](SKILL.md)；深度内容在 [pipeline/](pipeline/)—
 **「官方/头部项目会不会直接把我这块吃掉？」**
 如果 P0 判定赛道已被占，那正是正确结局——world-intro 让你去给上游提 PR，而不是再发一个冗余仓库。当它说该开，它会让你在 README 里写明差异，让"被收编"成为一场公平竞争而不是冷不防。
 
-**「真的只有两个案例吗？」**
-不是——这两个是管线跑过的发布里挑的典型；规律适用于任何私有 skill 或内部工具，不止这两个。
+**「真的只有三个案例吗？」**
+不是——这三个是管线跑过的发布里挑的典型；规律适用于任何私有 skill 或内部工具，不止这几个。
 
 ## 许可证
 
